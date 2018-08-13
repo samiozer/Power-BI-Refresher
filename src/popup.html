@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Set Page Color Popup</title>
+
+
+  <script src="jquery.min.js"></script>
+  <script src="popup.js"></script>
+  <script src="jquery.jstepper.min.js"></script>
+  <link rel="stylesheet" href="font-awesome\css\font-awesome.min.css">
+</head>
+<style>
+  body {
+    min-width: 194px;
+    margin: 0px;
+  }
+  
+  .input-symbol-euro {
+    position: relative;
+  }
+  
+  .input-symbol-euro input {
+    padding-right: 18px;
+    width: 100px;
+  }
+  
+  .input-symbol-euro:after {
+    position: absolute;
+    top: 0;
+    content: "sn";
+    right: 10px;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  button[disabled]:active,
+  button[disabled],
+  input[type="button"][disabled]:active,
+  input[type="button"][disabled],
+  input[type="submit"][disabled]:active,
+  input[type="submit"][disabled],
+  button[disabled]:hover,
+  input[type="button"][disabled]:hover,
+  input[type="submit"][disabled]:hover {
+    cursor: not-allowed;
+  }
+</style>
+
+<body>
+  <div style="width: 100%">
+    <div style="width:32px;float: left">
+      <img src="logo.png" width="32px" />
+    </div>
+    <div style="    width: calc(100% - 32px);
+  
+    float: right;
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'Segoe UI Light',wf_segoe-ui_light,helvetica,arial,sans-serif;
+    font-size: 15px;
+    background-color: black;
+        font-size: 12px;
+    height: 32px;">
+      <label style="margin-left: 6px;
+    color: white;
+    padding-top: 9px;
+    position: absolute;">Power BI Refresher</label>
+  </div>
+  </div>
+  <div style="    padding: 5px;
+    float: left;">
+    <label id="message" style="display: none">Power bi refresh button not found!!</label>
+    <table id="tableForm">
+      <thead>
+        <th style="text-align: left">
+          Refresh time
+        </th>
+        <th>
+        </th>
+        <th>
+        </th>
+      </thead>
+      <tr>
+        <td>
+          <span class="input-symbol-euro">
+        <input type="number" id="timerInput" value="60" required min="1" max="2700000" />
+        </span>
+        </td>
+        <td>
+          <button id="startBtn">
+          <i class="fa fa-play">
+          </i>
+          </button>
+
+        </td>
+        <td>
+          <button type="button" id="stopBtn">
+          <i style="color: darkred" class="fa fa-stop">
+          </i>
+       </button>
+        </td>
+      </tr>
+    </table>
+    </div>
+
+</body>
+
+</html>
