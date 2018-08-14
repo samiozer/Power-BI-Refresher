@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
           $(tableForm).hide();
           $(message).show();
-          $(message).val("Power bi refresh button not found!!");
+          $(message).val("Power BI refresh button not found!!");
           // alert("Power bi refresh button not found!!");
         }
       });
