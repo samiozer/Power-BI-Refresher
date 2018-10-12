@@ -1,8 +1,8 @@
 {
   "name": "Power BI Report Refresher",
   "short_name":"Power BI Refresher",
-  "description": "Click refresh button at specific time intervals",
-  "version": "1.0.2",
+  "description": "Clicks refresh button at specific time intervals. Works with Power BI service and Power BI Report Server.",
+  "version": "1.0.3",
   "permissions": [
     "tabs",
     "https://*/*",
